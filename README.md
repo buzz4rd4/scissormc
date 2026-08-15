@@ -1,18 +1,17 @@
 
 
-**ShreddedPaper is in public beta.** Most features work for most players most of
+**Scissormcis in public beta.** Most features work for most players most of
 the time, however things can occasionally break.
 
-26.2 [Purpur](https://github.com/PurpurMC/Purpur) fork that brings vertical scaling to Minecraft.
-
-ShreddedPaper:
+26.2 
+Scissormc:
 
 - Allows multiple threads to work together to run a single world
   - When ticking a chunk on one thread, all other chunks in a certain radius
     are locked so that only this thread has access to them, preventing any
     race conditions between threads.
 
-See [HOW_IT_WORKS.md](HOW_IT_WORKS.md) for more information on how ShreddedPaper
+See [HOW_IT_WORKS.md](HOW_IT_WORKS.md) for more information on how Scissormc
 works.
 
 ### Developing a plugin for a multi-threaded server
@@ -25,7 +24,7 @@ In summary, a plugin must be careful of:
 
 [See here for a more detailed tutorial](DEVELOPING_A_MULTITHREAD_PLUGIN.md)
 
-If your plugin already has support for Folia it is highly likely that it will already work with ShreddedPaper without any changes.  
+If your plugin already has support for Folia it is highly likely that it will already work with Scissormc without any changes.  
 If you have a Folia check similar to the following:  
 ```java
 try {
@@ -45,7 +44,7 @@ try {
 }
 ```
 
-### Using the ShreddedPaper API as a dependency
+### Using the Scissormc API as a dependency
 
 [![Clojars Project](https://img.shields.io/clojars/v/com.github.puregero/shreddedpaper-api.svg)](https://clojars.org/com.github.puregero/shreddedpaper-api)
 
